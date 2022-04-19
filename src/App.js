@@ -1,20 +1,22 @@
-import React from 'react'
+ import React from 'react'
 import BookForm from './components/BookForm'
-import Footer from './components/Footer'
-import NavBar from './components/NavBar'
+ import Navbar from './components/Navbar'
+ import Footer from './components/Footer'
+ 
+ function App() {
+   return (
+     <div className='app'>
+     <Navbar/>
 
-function App() {
-  return (
-    <div className='app'>
-      <NavBar />
-      <main>
-        <div className='container'>
-          <BookForm/>
-        </div>
-      </main>
-      <Footer/>
-    </div>
-  )
-}
-
-export default App
+     
+     <main>
+<div className='container'>
+<BookForm/>
+</div>
+</main>
+<Footer/>
+     </div>
+   )
+ }
+ 
+ export default App
